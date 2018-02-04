@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="32" started-at="2018-02-04T15:35:36Z" finished-at="2018-02-04T15:35:36Z">
+    <groups>
+      <group name="init">
+        <method signature="TestInit.testInit()[pri:0, instance:pkg.one.TestInit@57829d67]" name="testInit" class="pkg.one.TestInit"/>
+      </group> <!-- init -->
+      <group name="G1">
+        <method signature="Test2_1.test2_1_1()[pri:0, instance:pkg.two.Test2_1@19dfb72a]" name="test2_1_1" class="pkg.two.Test2_1"/>
+      </group> <!-- G1 -->
+      <group name="G2">
+        <method signature="Test1_2.test1_2_1()[pri:0, instance:pkg.one.Test1_2@340f438e]" name="test1_2_1" class="pkg.one.Test1_2"/>
+      </group> <!-- G2 -->
+    </groups>
+    <test name="Test1" duration-ms="32" started-at="2018-02-04T15:35:36Z" finished-at="2018-02-04T15:35:36Z">
+      <class name="pkg.two.Test2_1">
+        <test-method status="PASS" signature="test2_1_1()[pri:0, instance:pkg.two.Test2_1@19dfb72a]" name="test2_1_1" duration-ms="1" depends-on-groups="init" started-at="2018-02-04T23:35:36Z" finished-at="2018-02-04T23:35:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2_1_1 -->
+      </class> <!-- pkg.two.Test2_1 -->
+      <class name="pkg.one.TestInit">
+        <test-method status="PASS" signature="testInit()[pri:0, instance:pkg.one.TestInit@57829d67]" name="testInit" duration-ms="14" started-at="2018-02-04T23:35:36Z" finished-at="2018-02-04T23:35:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInit -->
+      </class> <!-- pkg.one.TestInit -->
+      <class name="pkg.one.Test1_2">
+        <test-method status="PASS" signature="test1_2_1()[pri:0, instance:pkg.one.Test1_2@340f438e]" name="test1_2_1" duration-ms="1" depends-on-groups="init" started-at="2018-02-04T23:35:36Z" finished-at="2018-02-04T23:35:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1_2_1 -->
+      </class> <!-- pkg.one.Test1_2 -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite1 -->
+</testng-results>

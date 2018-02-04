@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+    <test name="Test1" >
+        <groups>
+            <define name="all">
+                <include name="G1"/>
+                <include name="G2"/>
+            </define>
+
+            <dependencies>
+                <group name="G1" depends-on="init"/>
+                <group name="G2" depends-on="init"/>
+            </dependencies>
+        </groups>
+
+        <packages>
+            <package name="pkg.*"/>
+        </packages>
+    </test>
+</suite>
